@@ -1,7 +1,7 @@
-import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { setNameTrainer } from '../store/slices/trainerName.slice'
+import './styles/home.css'
 
 
 const Home = () => {
@@ -9,6 +9,7 @@ const Home = () => {
    const dispatch= useDispatch()
 
     const navigate= useNavigate()
+
 
     const handleSubmit= e => {
         e.preventDefault()
@@ -19,15 +20,17 @@ const Home = () => {
        
 
   return (
-    <div>
-        <h1>Pokedex</h1>
-        <h2>Hi trainer</h2>
+    <article className='poke_home'>
+        <img className='poke_img-home' src="/images/Home.Image.png" alt="" />
+        <h2 className='poke_greeting'>Hi trainer</h2>
         <p>To start this pokedex, give me your name</p>
         <form onSubmit={handleSubmit}>
-            <input id='name' type="text" />
-            <button>Start</button>
+            <input className='input_home' placeholder='Your name' id='name' type="text" />
+            <button className='button_home'>Start</button>
         </form>
-    </div>
+        <footer className='footer'></footer>
+    </article>
+   
   )
 }
 

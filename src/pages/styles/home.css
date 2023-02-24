@@ -1,0 +1,38 @@
+.poke_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+  }
+.poke_img-home{
+    width: 50%;
+    margin-top: 3rem;
+}
+.poke_greeting{
+    color: red;
+    margin-top: 3rem;
+}
+.button_home{
+    background-color: red;
+    color: white;
+    height: 2rem;
+}
+.input_home{
+    height: 2rem;
+    border: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    margin-top: 2rem;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 100%;
+     background: linear-gradient(to bottom, #FE1936 65%, #000000 55%);
+     height: 180px;
+     margin-top: auto;
+ } 
