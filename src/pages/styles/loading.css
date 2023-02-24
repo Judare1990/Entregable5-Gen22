@@ -1,0 +1,9 @@
+.container_gif{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.gif{
+   width: 13%;
+}
