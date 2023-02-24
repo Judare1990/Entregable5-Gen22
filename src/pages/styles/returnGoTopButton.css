@@ -1,0 +1,35 @@
+.poke__info-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 2rem;
+}
+.return__button{
+    height: 50px;
+    width: 100px;
+    margin-bottom: 1.5rem;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 4px rgb(79, 55, 55);
+    transition: transform 100ms ease;
+    cursor: pointer;
+}
+.return__button:hover{
+    transform: scale(1.1);
+}
+.scroll__button{
+    height: 50px;
+    width: 100px;
+    margin-bottom: 1.5rem;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 4px rgb(79, 55, 55);
+    transition: transform 100ms ease;
+    cursor: pointer;
+}
+.scroll__button:hover{
+    transform: scale(1.1);
+}

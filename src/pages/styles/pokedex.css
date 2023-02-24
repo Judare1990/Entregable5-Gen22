@@ -20,7 +20,9 @@
     height: 40px;
     width: 500px;
     padding: 0.5rem;
-    margin-right: 10px;
+    margin-right: 10px ;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border: none;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -37,7 +39,7 @@
 .poke_cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 0 100px;
+    margin: 2rem 100px;
     gap: 1rem;
     border: none;
 }

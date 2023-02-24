@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import Header from '../components/pokedex/Shared/header'
 import './styles/pokeInfo.css'
 import './styles/loading.css'
+import './styles/returnGoTopButton.css'
 
 
 const PokeInfo = () => {
@@ -14,6 +15,17 @@ const PokeInfo = () => {
   const [hasError, setHasError] = useState(false)
   const [poke, setPoke] = useState()
   const [isLoading, setIsLoading] = useState(false)
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  const handleBackClick = () => {
+    window.history.back();
+  };
 
   useEffect(() => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`
@@ -38,6 +50,7 @@ const PokeInfo = () => {
   if (hasError) {
     return <div className='not_found-img'>
       <h1 className='poke_not-found'>🥵I am sorry, the pokemon with name "{id}" was not found🥵</h1>
+      <button className='return__button' onClick={handleBackClick}>Back</button>
     </div>
   } else {
     return (
@@ -127,7 +140,10 @@ const PokeInfo = () => {
                     }
                   </ul>
                 </section>
-
+                <footer className='poke__info-footer'>
+                <button className='return__button' onClick={handleBackClick}>Back</button>
+                <button className='scroll__button' onClick={handleScrollToTop}>Go top</button>
+              </footer>
               </div>
             </div>
         }
